@@ -1,8 +1,11 @@
+import Header from "./components/Header";
+import About from "./components/About";
+
 function App() {
   return (
     <main>
-      <h1>My Portfolio</h1>
-      <p>Welcome! This is a React + TypeScript portfolio.</p>
+      <Header />
+      <About />
     </main>
   );
 }
