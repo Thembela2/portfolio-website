@@ -1,12 +1,14 @@
-import Header from "./components/Header";
-import About from "./components/About";
+import Header from "./components/Header";  // Header component
+import About from "./components/About";    // About component
+import Skills from "./components/Skills";  // Skills component
 
 function App() {
   return (
-    <main>
-      <Header />
-      <About />
-    </main>
+    <>
+      <Header />   {/* Header section */}
+      <About />    {/* About section */}
+      <Skills />   {/* Skills section */}
+    </>
   );
 }
 

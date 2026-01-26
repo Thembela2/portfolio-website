@@ -66,3 +66,28 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* Skills section */
+#skills {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#skills h2 {
+  margin-bottom: 1rem;
+}
+
+#skills ul {
+  list-style: none;                /* Remove bullets */
+  padding: 0;
+  display: grid;                    /* Grid layout for multiple columns */
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+#skills li {
+  background: #f4f4f4;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+}
