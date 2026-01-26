@@ -1,7 +1,8 @@
 import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects"; // import Projects
+import Projects from "./components/Projects";
+import Certifications from "./components/Certifications"; 
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <Header />
       <About />
       <Skills />
-      <Projects /> {/* Projects section added */}
+      <Projects />
+      <Certifications /> 
     </>
   );
 }
