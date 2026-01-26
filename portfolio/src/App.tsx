@@ -2,7 +2,8 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Certifications from "./components/Certifications"; 
+import Certifications from "./components/Certifications";
+import Contact from "./components/Contact"; // import Contact
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <Certifications /> 
+      <Certifications />
+      <Contact /> {/* Add Contact section */}
     </>
   );
 }
