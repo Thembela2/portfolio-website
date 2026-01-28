@@ -240,7 +240,7 @@ nav a:hover {
 .tab-content ul {
   list-style: none;
   padding: 1.5rem;
-  width: 800px;
+  width: 1000px;
   background-color: #0077cc;
   max-height: 400px;
   overflow-y: auto;

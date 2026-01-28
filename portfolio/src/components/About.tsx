@@ -8,22 +8,21 @@ function About() {
       <h1 className="about-heading">About Me</h1>
 
       <p className="about-intro">
-        I’m a curious and motivated aspiring software developer who enjoys solving
+        I'm a curious and motivated aspiring software developer who enjoys solving
         problems and building systems that actually work. With a background in web
         development and systems design, I focus on creating clean, usable, and
-        meaningful solutions. I’m constantly learning and exploring new areas in
+        meaningful solutions. Im constantly learning and exploring new areas in
         tech while valuing growth, collaboration, and real-world impact.
       </p>
 
       {/* Tabs */}
       <div className="tab-titles">
-        {["skills", "education", "experience", "career"].map((tab) => (
+        {["education", "experience", "career"].map((tab) => (
           <button
             key={tab}
             className={`tab-link ${activeTab === tab ? "active" : ""}`}
             onClick={() => setActiveTab(tab)}
           >
-            {tab === "skills" && "Skills"}
             {tab === "education" && "Education"}
             {tab === "experience" && "Community Engagement"}
             {tab === "career" && "Career Interests"}
@@ -33,15 +32,6 @@ function About() {
 
       {/* Tab Content */}
       <div className="tab-content">
-        {activeTab === "skills" && (
-          <ul>
-            <li>HTML, CSS, JavaScript, PHP</li>
-            <li>MySQL, SQL</li>
-            <li>Git & GitHub</li>
-            <li>Network Security & Penetration Testing</li>
-          </ul>
-        )}
-
         {activeTab === "education" && (
           <ul>
             <li>
@@ -161,6 +151,17 @@ function About() {
 
         {activeTab === "career" && (
           <ul className="career-list">
+             <li>
+              <span>Software Engineer</span>
+              <p className="why">
+                My interest in software development grew during system development
+                coursework, where I worked across the full project lifecycle and
+                learned the impact of good structure and design. Working on real systems 
+                taught me the value of collaboration, creativity, and user-focused design. 
+                I enjoy turning ideas into functional solutions.
+              </p>
+            </li>
+            
             <li>
               <span>Cybersecurity Analyst</span>
               <p className="why">
@@ -168,33 +169,6 @@ function About() {
                 that even with our best efforts in securing systems using PHP,
                 vulnerabilities remained. This highlighted the importance of
                 cybersecurity and motivated me to help build safer digital spaces.
-              </p>
-            </li>
-
-            <li>
-              <span>Penetration Tester</span>
-              <p className="why">
-                The idea that systems can appear secure yet still be exposed
-                challenged me. I’m interested in ethically testing systems to
-                uncover weaknesses before they become real threats.
-              </p>
-            </li>
-
-            <li>
-              <span>Software Engineer</span>
-              <p className="why">
-                My interest in software engineering grew during system development
-                coursework, where I worked across the full project lifecycle and
-                learned the impact of good structure and design.
-              </p>
-            </li>
-
-            <li>
-              <span>Software Developer</span>
-              <p className="why">
-                Working on real systems taught me the value of collaboration,
-                creativity, and user-focused design. I enjoy turning ideas into
-                functional solutions.
               </p>
             </li>
 
