@@ -191,6 +191,64 @@ nav a:hover {
   background: var(--text-color);
   color: black;
 }
+/* ---------- About Section ---------- */
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* horizontal centering */
+  justify-content: center;  /* vertical centering */
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.about-heading {
+  font-size: 4.5rem;
+  margin-top: -5%;
+}
+
+.about-intro {
+  max-width: 800px;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* ---------- Tabs ---------- */
+.tab-titles {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.tab-link {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1rem;
+  cursor: pointer;
+  padding-bottom: 0.25rem;
+}
+
+.tab-link.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+/* ---------- Tab Content ---------- */
+.tab-content ul {
+  list-style: none;
+  padding: 1.5rem;
+  width: 800px;
+  background-color: #0077cc;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.tab-content li {
+  margin-bottom: 0.75rem;
+}
 
 
 /* Skills section */
