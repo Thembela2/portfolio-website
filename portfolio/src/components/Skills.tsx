@@ -1,35 +1,81 @@
-// Skills component: displays a list of your technical skills
+// Skills component: displays your skills grouped by category
 const Skills = () => {
-  // Define your skills as a TypeScript array of strings
-  const skills: string[] = [
-    "HTML",          // Markup language
-    "CSS",           // Styling
-    "JavaScript",    // Frontend scripting
-    "TypeScript",    // Typed superset of JavaScript
-    "React",         // Frontend library
-    "PHP",           // Backend language
-    "MySQL",         // Database
-    "Firebase",      // Backend as a service
-    "Git & GitHub"   // Version control
-  ];
+  // Define skills by category using a TypeScript object
+  const skills = {
+    "Frontend Development": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Responsive Web Design",
+      "Bootstrap",
+      "UI Design",
+      "Interactive Web Pages"
+    ],
+    "Backend Development": [
+      "Node.js",
+      "PHP",
+      "RESTful APIs",
+      "API Development",
+      "Express.js"
+    ],
+    "Databases & Data": [
+      "MySQL",
+      "MongoDB",
+      "Firebase",
+      "Relational Databases",
+      "NoSQL Databases",
+      "Database Schemas"
+    ],
+    "Web Application Development": [
+      "Web Application Development",
+      "Application Deployment",
+      "Web Hosting"
+    ],
+    "Testing & Quality Assurance": [
+      "Debugging",
+      "Software Testing",
+      "Web Application Testing",
+      "Performance Testing"
+    ],
+    "Version Control & Collaboration": [
+      "Git",
+      "GitHub",
+      "Version Control"
+    ],
+    "Professional Skills": [
+      "Problem Solving",
+      "Analytical Thinking",
+      "Critical Thinking",
+      "Requirement Analysis",
+      "Attention to Detail",
+      "Research",
+      "Written Communication"
+    ]
+  };
 
-  // JSX: how this component will render in the browser
   return (
     <section id="skills">
       {/* Section heading */}
-      <h2>Skills</h2>
+      <h1>Skills</h1>
 
-      {/* List of skills */}
-      <ul>
-        {skills.map((skill) => (
-          // Each skill gets a <li> element
-          // key={skill} helps React track elements efficiently
-          <li key={skill}>{skill}</li>
-        ))}
-      </ul>
+      {/* Loop through each skill category */}
+      {Object.entries(skills).map(([category, skillList]) => (
+        <div key={category} className="skill-category">
+          {/* Category title */}
+          <h3>{category}</h3>
+
+          {/* Skills under this category */}
+          <ul>
+            {skillList.map((skill) => (
+              <li key={skill}>{skill}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </section>
   );
 };
 
-// Export the component so we can import it in App.tsx
 export default Skills;
