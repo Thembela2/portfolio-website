@@ -10,16 +10,16 @@ interface Project {
 // You can add as many projects as you like here
 const projects: Project[] = [
   {
-    name: "School Website",
+    name: "Digs Space Rating System | 2023",
     description:
-      "A responsive website for Lungisa High School showcasing staff, departments, and news.",
+      "As a group of 5, we developed a user-friendly platform enabling students to submit and view ratings of off-campus accommodation. Implemented structured data handling to improve accessibility and clarity of housing information..",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
   },
   {
-    name: "African Nations League Simulator",
+    name: "Residence Maintenance System | 2024",
     description:
-      "A tournament simulator web app for African football federations, with match simulation and email notifications.",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "Firebase"],
+      "Designed and led the development of a web-based maintenance management system for university residences. Implemented database-driven fault tracking and role-based dashboards to improve issue resolution efficiency.",
+    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
   },
 ];
 
@@ -27,7 +27,7 @@ const Projects = () => {
   return (
     // Section for the Projects component
     <section id="projects">
-      <h2>Projects</h2>
+      <h1>Projects</h1>
 
       {/* Map through the projects array and display each project */}
       <div className="project-list">

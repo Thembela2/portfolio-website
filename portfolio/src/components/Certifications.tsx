@@ -20,6 +20,21 @@ const certifications: Certification[] = [
     year: "2024",
   },
   {
+    title: "SQL for Beginners",
+    issuer: "Coursera",
+    year: "2024",
+  },
+  {
+    title: "SQL for Beginners",
+    issuer: "Coursera",
+    year: "2024",
+  },
+  {
+    title: "SQL for Beginners",
+    issuer: "Coursera",
+    year: "2024",
+  }, 
+  {
     title: "TypeScript Fundamentals",
     issuer: "Pluralsight",
     year: "2025",
@@ -30,7 +45,7 @@ const certifications: Certification[] = [
 const Certifications = () => {
   return (
     <section id="certifications">
-      <h2>Certifications</h2>
+      <h1>Certifications</h1>
 
       <div className="cert-list">
         {certifications.map((cert) => (
