@@ -347,17 +347,44 @@ nav a:hover {
   gap: 1rem;
 }
 
-.cert-card {
-  background: #f4f4f4;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-}
-
 .cert-card a {
   color: #0077cc;
   text-decoration: underline;
 }
+.cert-card {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  color: #1a1a1a;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Hidden by default */
+.cert-link {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  font-weight: 600;
+  color: #2563eb; /* blue */
+  text-decoration: none;
+}
+
+/* Show on hover */
+.cert-card:hover .cert-link {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
 /*Contact section */
 /* Contact section container */

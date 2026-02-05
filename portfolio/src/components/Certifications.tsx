@@ -9,35 +9,39 @@ interface Certification {
 // Array of your certifications
 const certifications: Certification[] = [
   {
-    title: "React - The Complete Guide",
-    issuer: "Udemy",
-    year: "2025",
+    title: "Front-End Web Development",
+    issuer: "IBM SkillsBuild",
+    year: "2026",
     link: "https://www.udemy.com/certificate/EXAMPLE1"
   },
   {
-    title: "SQL for Beginners",
-    issuer: "Coursera",
-    year: "2024",
+    title: "Back-End Development",
+    issuer: "IBM SkillsBuild",
+    year: "2026",
+    link: "https://www.udemy.com/certificate/EXAMPLE1"
   },
   {
-    title: "SQL for Beginners",
-    issuer: "Coursera",
-    year: "2024",
+    title: "Responsive Web Page Development",
+    issuer: "IBM SkillsBuild",
+    year: "2026",
+    link: "https://www.udemy.com/certificate/EXAMPLE1"
   },
   {
-    title: "SQL for Beginners",
-    issuer: "Coursera",
-    year: "2024",
+    title: "Interactive Front-End Development",
+    issuer: "IBM SkillsBuild",
+    year: "2026",
+    link: "https://www.udemy.com/certificate/EXAMPLE1"
   },
   {
-    title: "SQL for Beginners",
-    issuer: "Coursera",
-    year: "2024",
+    title: "Integration of Databases",
+    issuer: "IBM SkillsBuild",
+    year: "2026",
+    link: "https://www.udemy.com/certificate/EXAMPLE1"
   }, 
   {
-    title: "TypeScript Fundamentals",
-    issuer: "Pluralsight",
-    year: "2025",
+    title: "Web Application Testing and Deployment",
+    issuer: "IBM SkillsBuild",
+    year: "2026",
     link: "https://www.pluralsight.com/certificate/EXAMPLE2"
   }
 ];
@@ -55,13 +59,17 @@ const Certifications = () => {
               {cert.issuer} • {cert.year}
             </p>
             {/* Only show link if it exists */}
-            {cert.link && (
-              <p>
-                <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                  View Certificate
-                </a>
-              </p>
-            )}
+           {cert.link && (
+            <a
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cert-link"
+            >
+              View Certificate
+            </a>
+          )}
+
           </div>
         ))}
       </div>
