@@ -394,9 +394,23 @@ nav a:hover {
   margin: 0 auto;
 }
 
+#contact h1{
+  margin-bottom: 1rem;
+  font-size: 4.5rem;
+  margin-top: -5%;
+  align-items: center;      /* horizontal centering */
+  text-align: center;
+}
 /* Each input container */
+#contact form{
+    background-color: white;
+    color: black;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
 #contact form div {
   margin-bottom: 1rem;
+
 }
 
 /* Labels for all fields */
