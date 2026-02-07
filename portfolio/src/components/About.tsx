@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function About() {
-  const [activeTab, setActiveTab] = useState("skills");
+  const [activeTab, setActiveTab] = useState("education");
 
   return (
     <section className="about" id="about">

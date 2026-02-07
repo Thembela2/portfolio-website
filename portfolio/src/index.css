@@ -1,16 +1,29 @@
 :root {
+  /* Typography */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   font-weight: 400;
+  line-height: 1.5;
 
+  /* Colors */
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+  /* Rendering */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Box model reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 a {
@@ -64,14 +77,34 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-/*Navbar*/
+/* Navbar */
+:root {
+  --navbar-height: 80px;
+}
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box; /* 👈 IMPORTANT */
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background-color: #0077cc;
   color: white;
+  height: var(--navbar-height);
+}
+nav a.active {
+  border-bottom: 2px solid white;
+  padding-bottom: 0.25rem;
+}
+
+/* Add spacing so content doesn't hide behind navbar */
+body {
+  margin: 0;
+  padding-top: 70px;      /* adjust to navbar height */
 }
 
 nav ul {
@@ -88,12 +121,16 @@ nav a {
   font-weight: 500;
 }
 
-
 nav a:hover {
   text-decoration: underline;
 }
 
 /* ---------- Hero / Header ---------- */
+.hero {
+  padding-top: calc(var(--navbar-height) + 2rem);
+  min-height: 100vh;
+}
+
 .Fname {
   font-size: 8.5rem;
   font-weight: bold;
@@ -191,6 +228,7 @@ nav a:hover {
   background: var(--text-color);
   color: black;
 }
+
 /* ---------- About Section ---------- */
 .about {
   min-height: 100vh;
@@ -199,7 +237,8 @@ nav a:hover {
   align-items: center;      /* horizontal centering */
   justify-content: center;  /* vertical centering */
   text-align: center;
-  padding: 4rem 1rem;
+
+  padding-top: calc(var(--navbar-height) + 4rem);
 }
 
 .about-heading {
@@ -253,9 +292,9 @@ nav a:hover {
 
 /* Skills section */
 #skills {
-  padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
+  padding-top: calc(var(--navbar-height) + 4rem);
 }
 
 #skills h1 {
@@ -303,9 +342,9 @@ nav a:hover {
 
 /* Projects section */
 #projects {
-  padding: 2rem;
   max-width: 900px;
   margin: 0 auto;
+  padding-top: calc(var(--navbar-height) + 4rem);
 }
 
 #projects h1 {
@@ -329,9 +368,10 @@ nav a:hover {
 
 /*Certifications section*/
 #certifications {
-  padding: 2rem;
+
   max-width: 900px;
   margin: 0 auto;
+  padding-top: calc(var(--navbar-height) + 4rem);
 }
 
 #certifications h1{
@@ -389,9 +429,9 @@ nav a:hover {
 /*Contact section */
 /* Contact section container */
 #contact {
-  padding: 2rem;
   max-width: 600px;
   margin: 0 auto;
+  padding-top: calc(var(--navbar-height) + 4rem);
 }
 
 #contact h1{
