@@ -39,8 +39,14 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  overflow-y: scroll; /* keep scroll functional */
 }
 
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;

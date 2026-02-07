@@ -20,7 +20,7 @@ const Contact = () => {
         {
           from_name: name,     // Form values
           from_email: email,
-          company_compName: compName, // New company field
+          compName_compName: compName, // New company field
           message: message,
         },
         "adVEwLIvr2VRr0W1V"      // Replace with your EmailJS public key
@@ -77,7 +77,7 @@ const Contact = () => {
           <label htmlFor="company">Company Name:</label>
           <input
             type="text"
-            id="company"
+            id="compName"
             value={compName}
             onChange={(e) => setCompName(e.target.value)}
           />
