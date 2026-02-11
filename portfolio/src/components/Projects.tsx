@@ -22,28 +22,10 @@ const projects: Project[] = [
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
   },
    {
-    name: "Residence Maintenance System | 2024",
+    name: "Residence Maintenance System | 2026",
     description:
-      "Designed and led the development of a web-based maintenance management system for university residences. Implemented database-driven fault tracking and role-based dashboards to improve issue resolution efficiency.",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-  },
-   {
-    name: "Residence Maintenance System | 2024",
-    description:
-      "Designed and led the development of a web-based maintenance management system for university residences. Implemented database-driven fault tracking and role-based dashboards to improve issue resolution efficiency.",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-  },
-   {
-    name: "Residence Maintenance System | 2024",
-    description:
-      "Designed and led the development of a web-based maintenance management system for university residences. Implemented database-driven fault tracking and role-based dashboards to improve issue resolution efficiency.",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-  },
-   {
-    name: "Residence Maintenance System | 2024",
-    description:
-      "Designed and led the development of a web-based maintenance management system for university residences. Implemented database-driven fault tracking and role-based dashboards to improve issue resolution efficiency.",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      "Coming soon",
+    technologies: ["Typescript", "React", "JavaScript", "PHP", "MySQL"],
   },
 ];
 
