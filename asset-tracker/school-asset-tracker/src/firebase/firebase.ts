@@ -2,15 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBmoDENcm0WkXugMU5PlldR_6e1jNrhA5k",
-  authDomain: "asset-tracker-cc1fb.firebaseapp.com",
-  projectId: "asset-tracker-cc1fb",
-  storageBucket: "asset-tracker-cc1fb.firebasestorage.app",
-  messagingSenderId: "30080486147",
-  appId: "1:30080486147:web:6dbfdf7cfea6038df0b736"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
-
 const app = initializeApp(firebaseConfig);
-
 export const db = getFirestore(app);

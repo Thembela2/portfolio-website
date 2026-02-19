@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs} from "firebase/firestore";
 import { db } from "./firebase/firebase";
 
 type Asset = {
@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     const fetchAssets = async () => {
-      const querySnapshot = await getDocs(collection(db, "assets"));
+      const querySnapshot = await getDocs(collection(db, "Assets"));
 
       const assetList: Asset[] = querySnapshot.docs.map(doc => ({
         id: doc.id,
