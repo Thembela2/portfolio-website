@@ -47,3 +47,15 @@ body {
 .selected {
     outline: 3px solid yellow;
 }
+.unit {
+    font-weight: bold;
+    color: white;
+}
+
+.player-unit {
+    color: cyan;
+}
+
+.enemy-unit {
+    color: red;
+}
